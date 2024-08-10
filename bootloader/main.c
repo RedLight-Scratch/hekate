@@ -1178,7 +1178,7 @@ static void _show_errors()
 
 static void _check_low_battery()
 {
-	if (true)
+	if (true) // true was originally FUSE_NX_HW_STATE_DEV
 		goto out;
 
 	int enough_battery;
