@@ -781,7 +781,7 @@ lv_res_t mbox_action(lv_obj_t *btns, const char *txt)
 
 bool nyx_emmc_check_battery_enough()
 {
-	if (fuse_read_hw_state() == FUSE_NX_HW_STATE_DEV)
+	/* if (fuse_read_hw_state() == FUSE_NX_HW_STATE_DEV)
 		return true;
 
 	int batt_volt = 0;
@@ -810,7 +810,7 @@ bool nyx_emmc_check_battery_enough()
 		lv_obj_set_top(mbox, true);
 
 		return false;
-	}
+	} */
 
 	return true;
 }
